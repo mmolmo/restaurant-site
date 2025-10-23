@@ -11,7 +11,7 @@
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 
     --primary: #1a1a2e;
-    --secondary: brown;
+    --secondary: rgb(109, 12, 12);
     --accent1: rgb(74, 74, 231);
     --accent2: rgba(137, 137, 137, 0.674);
     --accent3: rgba(255, 255, 255, 0.256);
@@ -53,7 +53,8 @@
 *{
   padding: 0;
   margin: 0;
-  border-sizing: border-box;
+  box-sizing: border-box;
+
 } 
 
 main, body{
@@ -63,6 +64,7 @@ main, body{
 } 
 body{
   height: 100vh;
+  background-color: var(--bg);
 }
 
 main{
@@ -244,6 +246,7 @@ section{
       text-decoration:none;
       font-weight:700;
       width: fit-content;
+      align-content: center;
     }
     .mobile-toggle{
         display:none;
@@ -261,7 +264,6 @@ section{
       justify-content: space-around;
       gap:28px;
       align-items:center;
-      background: #1212122c;
       background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('https://images.unsplash.com/photo-1726241966334-6e9f1de905d6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTQ2fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600') center/cover no-repeat;
@@ -278,7 +280,6 @@ section{
     .hero h2{margin:10px 0 12px;font-size:2rem;color:var(--accent-2)}
     .hero p{
         margin:0 0 18px;
-        /* color:var(--muted) */
     }
     .actions{display:flex;gap:12px;align-items:center}
     .secondary{border:1px solid rgba(44,62,80,0.06);padding:10px 14px;border-radius:10px;background:transparent;color:var(--accent-2);text-decoration:none}
@@ -498,7 +499,7 @@ section{
   justify-content: space-around;
   gap:28px;
   align-items:center;
-  background: #1212122c;
+  /* background: #1212122c; */
   background:
     linear-gradient(rgba(255, 255, 255, 0.752), rgba(255, 255, 255, 0.752)),
     url('../media/images/thriday-3fsfLwMEBg0-unsplash.jpg') center/cover no-repeat;
@@ -526,7 +527,7 @@ section{
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.gallery-card::before {
+/* .gallery-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -538,7 +539,7 @@ section{
   transition: opacity 0.4s ease;
   z-index: 1;
   pointer-events: none;
-}
+} */
 
 .gallery-card:hover::before,
 .gallery-card:focus::before {
@@ -575,6 +576,25 @@ section{
     }
   }
 
+
+/* socials */
+
+.socials-list{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  margin:0;
+  padding:0;
+  color: var(--accent);
+}
+
+.socials-list a{
+  color: var(--secondary);
+}
+
+.socials-list a:hover, .socials-list a:focus{
+  color: var(--accent);
+}
 
 /* location map */
 
