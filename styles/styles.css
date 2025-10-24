@@ -182,13 +182,13 @@ section{
 
 
 .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:16px;
-    max-width:var(--max-width);
-    margin:0 auto;
-    padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:12px 20px;
 }
     .brand{
         display:flex;
