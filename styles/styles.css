@@ -413,7 +413,7 @@ section{
 .card-grid .card:nth-child(1) {
   background:
     /* linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
-    url('https://images.unsplash.com/photo-1527847263472-aa5338d178b8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1174') center/cover no-repeat;
+    url('../media/images/card/jed-owen-ajZibDGpPew-unsplash.jpg') center/cover no-repeat;
     background-size:cover;
     background-position:center;
 }
@@ -421,7 +421,7 @@ section{
 .card-grid .card:nth-child(2) {
   background:
     /* linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
-    url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170') center/cover no-repeat;
+    url('../media/images/card/odiseo-castrejon-bG5rhvRH0JM-unsplash.jpg') center/cover no-repeat;
     background-size:cover;
     background-position:center;
 }
@@ -429,7 +429,7 @@ section{
 .card-grid .card:nth-child(3) {
   background:
     /* linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
-    url('https://images.unsplash.com/photo-1712164909622-5012e1d1c64a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170') center/cover no-repeat;
+    url('../media/images/card/photo-1712164909622-5012e1d1c64a.jpg') center/cover no-repeat;
     /* background-image: url(''); */
     background-size:cover;
     background-position:center;
@@ -453,7 +453,7 @@ section{
   background: linear-gradient(
     180deg,
     rgba(192, 57, 43, 0.4) 0%,
-    rgba(192, 57, 43, 0.92) 100%
+    var(--accent) 100%
   );
 }
 
@@ -464,8 +464,6 @@ section{
   z-index: 1;
   color: white;
 }
-
-
 
 .card button {
   align-self: flex-start;
@@ -527,19 +525,6 @@ section{
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-/* .gallery-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(44, 62, 80, 0.3) 0%,
-    rgba(44, 62, 80, 0.85) 100%
-  );
-  transition: opacity 0.4s ease;
-  z-index: 1;
-  pointer-events: none;
-} */
 
 .gallery-card:hover::before,
 .gallery-card:focus::before {
@@ -832,7 +817,7 @@ section{
 }
 
 .form-submit:hover {
-  background: #a92822;
+  background: var(--secondary);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(192, 57, 43, 0.3);
 }
